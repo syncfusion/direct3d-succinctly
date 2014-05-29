@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>4a98280f-a78f-4e3f-a839-9cf7eac2ac0a</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>84db8c42-636a-4c5e-ae67-2bf22d0e3361</UniqueIdentifier>
+    </Filter>
+    <Page Include="Common\StandardStyles.xaml">
+      <Filter>Common</Filter>
+    </Page>
+    <Image Include="Assets\Logo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SmallLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.png">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SimpleTextRenderer.cpp" />
+    <ClCompile Include="DirectXBase.cpp" />
+    <ClCompile Include="App.xaml.cpp" />
+    <ClCompile Include="DirectXPage.xaml.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="VertexShader.cpp" />
+    <ClCompile Include="PixelShader.cpp" />
+    <ClCompile Include="ModelReader.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="keyboard.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="BitmapBackground.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="App.xaml.h" />
+    <ClInclude Include="DirectXPage.xaml.h" />
+    <ClInclude Include="SimpleTextRenderer.h" />
+    <ClInclude Include="BasicTimer.h" />
+    <ClInclude Include="DirectXHelper.h" />
+    <ClInclude Include="DirectXBase.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="VertexShader.h" />
+    <ClInclude Include="PixelShader.h" />
+    <ClInclude Include="ModelReader.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="keyboard.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="BitmapBackground.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DXGameProgramming_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="DirectXPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="VertexShader.hlsl" />
+    <FxCompile Include="PixelShader.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="spaceship.obj" />
+    <Text Include="baddie.obj" />
+    <Text Include="bullet.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="spaceship.png" />
+    <Image Include="baddie.png" />
+    <Image Include="bullet.png" />
+    <Image Include="starfieldbackground.png" />
+  </ItemGroup>
+</Project>
